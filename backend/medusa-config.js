@@ -30,7 +30,11 @@ const modules = {
     options: { 
       redisUrl: process.env.REDIS_URL
     }
-  }
+  },
+  brandCanyonModuleService: {
+    resolve: "./modules/brand-canyon",
+  },
+
 };
 
 // Stripe payment provider

@@ -18,7 +18,15 @@
     "seed": "medusa exec ./src/scripts/seed.ts",
     "seed:once": "node script/seedOnce.js",
     "start": "medusa start",
-    "dev": "medusa develop"
+    "dev": "medusa develop",
+    "cli": "medusa -v",
+    "migrate": "medusa migrate",
+    "db:setup": "medusa db:setup",
+    "db:create": "medusa db:create",
+    "db:generate": "medusa db:generate",
+    "db:migrate": "medusa db:migrate",
+    "db:rollback": "medusa db:rollback",
+    "db:sync-links": "medusa db:sync-links"
   },
   "dependencies": {
     "@medusajs/api-key": "preview",
@@ -29,6 +37,7 @@
     "@medusajs/currency": "preview",
     "@medusajs/customer": "preview",
     "@medusajs/event-bus-local": "preview",
+    "@medusajs/event-bus-redis": "preview",
     "@medusajs/file": "preview",
     "@medusajs/file-local-next": "preview",
     "@medusajs/fulfillment": "preview",
@@ -37,7 +46,6 @@
     "@medusajs/medusa": "preview",
     "@medusajs/notification": "preview",
     "@medusajs/notification-local": "preview",
-    "@medusajs/event-bus-redis": "preview",
     "@medusajs/notification-sendgrid": "preview",
     "@medusajs/order": "preview",
     "@medusajs/payment": "preview",
@@ -68,6 +76,7 @@
     "@types/react": "^18.3.2",
     "prop-types": "^15.8.1",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.1.6"
   },
   "engines": {
